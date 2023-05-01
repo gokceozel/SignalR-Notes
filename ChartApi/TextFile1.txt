@@ -1,0 +1,14 @@
+﻿
+
+
+Projeyi kodlarken pivot table'ı tercih ettim. Pivot table tercih etme sebebim kullanacağım chart'ın anlaşılır olmas için bana gelen veriler aşağıdaki gibi gözükmesi gerekiyordu.
+
+Tarih       İzmir İstanbul Ankara
+01.05.2023   50    150      30
+02.05.2023   100    80      40  
+
+dokuman link
+
+Population service içinde sql tarafında pivot table kullanarak aldığım dataları GetChartList metodu ile okudum. Dikkat edilmesi gereken noktalar şu şekilde
+System.DBNull = Sql'den okuduğum veride null gelen alanı temsil eder.
+reader.GetDateTime(0) veri tabanında okuduğum Pivot table ile gelen 0. stunu temsil eder.
