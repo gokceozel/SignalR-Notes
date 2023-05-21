@@ -23,11 +23,9 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<AppDbContext>();
 builder.Services.AddScoped<PopulationService>();
 builder.Services.AddSignalR();
+builder.Services.AddSingleton<TimerManager>();
 
 var app = builder.Build();
-
-
-
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -37,9 +35,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseCors("CorsPolicy");
-
 app.UseAuthorization();
-
 app.MapControllers();
 app.MapHub<PopulationHub>("/PopulationHub");
 
