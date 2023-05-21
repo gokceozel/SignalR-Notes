@@ -1,0 +1,12 @@
+
+<div class="chart-div" *ngIf="signalRService.data">
+    <canvas id="chartCanvas" baseChart
+            [datasets]="signalRService.data"
+            [labels]="chartLabels"
+            [options]="chartOptions"
+            [legend]="chartLegend"
+            (chartClick)="chartClicked($event)"></canvas>
+  </div>
+  <br><br>
+
+<router-outlet></router-outlet>
