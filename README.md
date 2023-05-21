@@ -1,8 +1,6 @@
 # SignalR-Notlarım
 
-
-![image](https://github.com/gokceozel/SignalR-Notes/assets/11633936/6e75289e-b08e-4876-b393-83426dded3d8)
-
+![image](https://github.com/gokceozel/SignalR-Notes/assets/11633936/3ab9faac-1174-436b-9797-ddf8130b45d5 | width=400)
 
 Code First kullanarak oluşturduğum için <b>dotnet ef database update</b> komutunu unutmayın.
 
